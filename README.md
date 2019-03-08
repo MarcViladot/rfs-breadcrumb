@@ -1,7 +1,7 @@
 # RfsBreadcrumb
 
 Angular 7 Breadcrumbs generated from Angular Router.  
-[DEMO](https://rfs-breadcrumb.stackblitz.io)
+[DEMO](https://stackblitz.com/edit/rfs-breadcrumb)
 
 ## Installation
 

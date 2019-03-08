@@ -47,6 +47,13 @@ Add the rfs-breadcrumb selector to your app:
 class SampleComponent {}
 ```  
   
+## API Reference
+
+| Name    | Type   | Description            | default |
+|---------|--------|------------------------|---------|
+| divider | @Input | Divider of breadcrumbs |   '>'   |
+  
+  
 ## Contributing
   
 Feel free to open a Pull-Request.

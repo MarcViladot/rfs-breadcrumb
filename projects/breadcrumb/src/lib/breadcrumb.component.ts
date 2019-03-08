@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 export interface BreadcrumbItem {
@@ -12,7 +12,7 @@ export interface BreadcrumbItem {
     <div class="row" *ngIf="breadcrumbItems.length > 0">
       <span *ngFor="let item of breadcrumbItems; let i = index">
         <span [routerLink]="[item.url]" [ngClass]="(!currentUrl(item.url)?'active':'disabled')">{{item.text}}</span>
-        <span>{{i === breadcrumbItems.length - 1 ? '' : ' > '}}&nbsp;</span>
+        <span>&nbsp;{{i === breadcrumbItems.length - 1 ? '' : divider}}&nbsp;</span>
       </span>
     </div>
   `,
@@ -41,6 +41,8 @@ export interface BreadcrumbItem {
 export class BreadcrumbComponent implements OnInit {
 
   breadcrumbItems: BreadcrumbItem[] = [];
+
+  @Input() divider?: string  = '>';
 
   constructor(private router: Router) {
     router.events.subscribe(() => {

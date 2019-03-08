@@ -1,6 +1,7 @@
 # RfsBreadcrumb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+Angular 7 Breadcrumbs generated from Angular Router.  
+[DEMO](https://rfs-breadcrumb.stackblitz.io)
 
 ## Installation
 

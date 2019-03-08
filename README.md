@@ -33,7 +33,7 @@ export class AppModule {
 }
 ```
   
-Add the rfs-breadcrumb attribute to your app:
+Add the rfs-breadcrumb selector to your app:
 ```
 @Component({
   selector: 'sample',
